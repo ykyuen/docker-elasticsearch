@@ -1,3 +1,11 @@
+# About this repo
+
+This repository is a clone from [pires/docker-elasticsearch:2.4.1](https://github.com/pires/docker-elasticsearch/tree/2.4.1) but with a different base image which trying to fix the startup issue as mentioned in [Seldom exceptions with Alpine and multiple container layers](https://github.com/pires/kubernetes-elasticsearch-cluster/issues/89).
+
+In order to replace the alpine base image, [AtzeDeVries/kubernetes-elasticsearch](https://github.com/AtzeDeVries/kubernetes-elasticsearch) is also referenced.
+
+---
+
 # docker-elasticsearch
 
 Very lean (140MB) and highly configurable Elasticsearch Docker image.

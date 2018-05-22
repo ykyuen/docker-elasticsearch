@@ -1,9 +1,7 @@
 #!/bin/sh
 
 # provision elasticsearch user
-addgroup sudo
-adduser -D -g '' elasticsearch
-adduser elasticsearch sudo
+adduser --gecos "" --ingroup sudo -N --disabled-password elasticsearch
 chown -R elasticsearch /elasticsearch /data
 echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
